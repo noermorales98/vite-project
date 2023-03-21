@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/App.css'
-import GridCursos from './cursos/GridCursos'
+import Calculadora from './Calculadora'
 import Header from './header/Header'
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
       <div>
         <Header />
         <main>
-          <h1>Mi primer App con Vite</h1>
-          <GridCursos/>
+          <h1>Calculadora simple</h1>
+          <Calculadora/>
         </main>
       </div>
     </div>
