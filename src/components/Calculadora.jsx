@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Calculadora = (props) => {
 
@@ -6,6 +6,12 @@ const Calculadora = (props) => {
         num1: 0,
         num2: 0
     })
+    
+    const [text, setText] = useState("")
+    
+    useEffect(()=>{
+        console.log("hola mundo")
+    },[text])
     
     const setNumber1 = (e) =>{
         setState({
@@ -34,6 +40,8 @@ const Calculadora = (props) => {
                 <input type="button" value="Calcular" />
             </form>
             <span>resultado : {Number(state.num1) + Number(state.num2)}</span>
+            <input type="text" name="text" id="text" onChange={e=>{setText(e.target.value)}} />
+            <span>Resultado texto: {text}</span>
         </div>
     );
 }
