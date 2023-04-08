@@ -44,3 +44,10 @@
 ---
 ---
 #### Si algún atajo no funciona se pueden ver los que tenemos definidos (o cambiarlos) con: Ctrl + K + S
+
+
+## Iniciar el proyecto con Tailwindcss
+
+```powershell
+npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch
+```
