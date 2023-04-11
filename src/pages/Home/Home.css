@@ -1,7 +1,14 @@
+
 .main_button{
     background-color: #343434;
     color: #f6f6f6;
 }
+
+.top-cryptos{
+    background-color: #fff;
+    color: #343434;
+}
+
 
 .svg-icon{
     fill: #f6f6f6;
@@ -12,6 +19,12 @@
         background-color: #f6f6f6;
         color: #1e1e1e;
     }
+    
+    .top-cryptos{
+        background-color: black;
+        color: #fff;
+    }
+    
     .svg-icon{
         fill: #1e1e1e;
     }

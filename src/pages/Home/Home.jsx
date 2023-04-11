@@ -11,7 +11,7 @@ function Home() {
     axios
       .get(`${API_URL}assets`)
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         setCoins(data.data.data);
       })
       .catch(() => console.log("Error"));
@@ -22,8 +22,8 @@ function Home() {
   }
 
   return (
-    <div className="home pt-16 px-16">
-      <div className="flex flex-row justify-center">
+    <div className="home pt-16 px-16 mt-4">
+      <div className="flex flex-row justify-center items-center">
         <div className="w-1/2 left flex flex-col gap-8">
           <h1 className="font-bold text-7xl whitespace-nowrap">
             Analiza el mercado <br /> de las criptomonedas
@@ -65,10 +65,99 @@ function Home() {
           <img src={coinsimg} alt="" />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {coins.map(({ id, name }) => (
-          <li key={id}>{name}</li>
-        ))}
+      <div>
+        {/* barra de criptomonedas */}
+        <div className="top-cryptos px-8 py-8 flex justify-between gap-8 mx-2 rounded-xl mb-8">
+          {/* primer cripto */}
+          <div className="w-full flex flex-col gap-8">
+            <div className="top flex gap-1 items-baseline">
+              <p className="font-semibold">BTC</p>
+              <span className="text-xs text-gray-500">/USD</span>
+            </div>
+            <div className="bottom">
+              <div className="price flex justify-between items-start">
+                <div>
+                  <h1 className="priceUSD font-bold text-2xl">{parseFloat(coins[0].priceUsd).toFixed(2)}</h1>
+                  <p className="priceBTC text-xs text-gray-500">
+                    0.00000000 BTC
+                  </p>
+                </div>
+                <p className="p-2 bg-green-600 text-xs font-semibold rounded-xl text-white">
+                  +0.80%
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* dividor */}
+          <div className="divisor border-r-2 border-gray-200 block py-4"></div>
+          {/* segunda cripto */}
+          <div className="w-full flex flex-col gap-8">
+            <div className="top flex gap-1 items-baseline">
+              {/* Tether */}
+              <p className="font-semibold">Tether</p>
+              <span className="text-xs text-gray-500">/USD</span>
+            </div>
+            <div className="bottom">
+              <div className="price flex justify-between items-start">
+                <div>
+                  <h1 className="priceUSD font-bold text-2xl">{parseFloat(coins[2].priceUsd).toFixed(3)}</h1>
+                  <p className="priceBTC text-xs text-gray-500">
+                    0.00000000 BTC
+                  </p>
+                </div>
+                <p className="p-2 bg-green-600 text-xs font-semibold rounded-xl text-white">
+                  +0.80%
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* dividor */}
+          <div className="divisor border-r-2 border-gray-200 block py-4"></div>
+          {/* tercera cripto */}
+          <div className="w-full flex flex-col gap-8">
+            <div className="top flex gap-1 items-baseline">
+              {/* dogecoin */}
+              <p className="font-semibold">DogeCoin</p>
+              <span className="text-xs text-gray-500">/USD</span>
+            </div>
+            <div className="bottom">
+              <div className="price flex justify-between items-start">
+                <div>
+                  <h1 className="priceUSD font-bold text-2xl">{parseFloat(coins[7].priceUsd).toFixed(2)}</h1>
+                  <p className="priceBTC text-xs text-gray-500">
+                    0.00000000 BTC
+                  </p>
+                </div>
+                <p className="p-2 bg-green-600 text-xs font-semibold rounded-xl text-white">
+                  +0.80%
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* dividor */}
+          <div className="divisor border-r-2 border-gray-200 block py-4"></div>
+          {/* cuarta cripto */}
+          <div className="w-full flex flex-col gap-8">
+            <div className="top flex gap-1 items-baseline">
+              {/* Ethereum */}
+              <p className="font-semibold">ETH</p>
+              <span className="text-xs text-gray-500">/USD</span>
+            </div>
+            <div className="bottom">
+              <div className="price flex justify-between items-start">
+                <div>
+                  <h1 className="priceUSD font-bold text-2xl">{parseFloat(coins[1].priceUsd).toFixed(2)}</h1>
+                  <p className="priceBTC text-xs text-gray-500">
+                    0.00000000 BTC
+                  </p>
+                </div>
+                <p className="p-2 bg-green-600 text-xs font-semibold rounded-xl text-white">
+                  +0.80%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

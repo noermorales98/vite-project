@@ -1,0 +1,17 @@
+.nav-icon{
+    fill: var(--secondary-color);
+}
+
+.menu-buttons{
+    background: #fff;
+}
+
+/* enable dark mode */
+@media (prefers-color-scheme: dark) {
+    .nav-icon{
+        fill: var(--primary-color);
+    }
+    .menu-buttons{
+        background: #000;
+    }
+}

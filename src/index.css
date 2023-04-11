@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --primary-color: #f6f6f6;
+    --primary-color: #f2f4f5;
     --secondary-color: #1e1e1e;
     --primary-font: 'Poppins', sans-serif;
 }
@@ -16,7 +16,7 @@
 }
 
 body{
-    background: #f6f6f6;
+    background: #f2f4f5;
 }
 
 
