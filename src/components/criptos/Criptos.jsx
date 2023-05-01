@@ -1,17 +1,29 @@
-export default function Criptos({ name, priceUsd }) {
+import "./Criptos.css";
+
+export default function Criptos({ name, priceUsd, symbol, changePercent24Hr }) {
   let x = Math.floor(Math.random() * 256);
   let y = Math.floor(Math.random() * 256);
   let z = Math.floor(Math.random() * 256);
   return (
-    <div className="w-full flex justify-between items-center px-10 py-6 hover:bg-white rounded-xl">
-      <div className="left flex gap-1 items-center">
-        <span
-          className="point img w-0.5 h-0.5  py-1 px-1 rounded-full block"
-          style={{ background: `rgb(${x},${z},${y})` }}
-        ></span>
-        <h1 className="font-semibold">{name}</h1>
+    <div className="w-full flex flex-col gap-4 text-left justify-between items-start px-10 py-6 bg-white rounded-xl">
+      <div className="left flex gap-1 items-end justify-center">
+        <h1 className="text-base">{name}</h1>
+        <span className="text-gray-500 text-sm">/{symbol}</span>
       </div>
-      <p>${parseFloat(priceUsd)}</p>
+      <div className="flex items-center justify-between w-full">
+        <span className="text-3xl font-semibold max-sm:text-xl">${parseFloat(priceUsd).toFixed(2)}</span>
+        <span
+          className={
+            parseFloat(changePercent24Hr) > 0 ? "positivo max-sm:text-xs" : "negativo max-sm:text-xs"
+          }
+        >
+          {" "}
+          {parseFloat(changePercent24Hr).toFixed(3)}%
+        </span>
+      </div>
+      <div>
+        <span className=" text-xs text-gray-400">La variación de las últimas 24 hrs</span>
+      </div>
     </div>
   );
 }

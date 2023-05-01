@@ -1,0 +1,18 @@
+.positivo{
+    background: #16a34a;
+    color: white;
+    font-size: .8rem;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    font-weight: 600;
+}
+
+
+.negativo{
+    background: #fb794c;
+    color: white;
+    font-size: .8rem;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    font-weight: 600;
+}

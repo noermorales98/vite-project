@@ -2,10 +2,10 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="absolute top-0 w-full flex gap-4 items-center justify-between px-16 py-6">
+    <nav className="absolute top-0 w-full flex gap-4 items-center justify-between px-16 py-6 max-md:px-4 m-auto">
       <div className="title flex gap-10">
         <h1 className="font-semibold px-3 text-xl">SPSCoin</h1>
-        <div className="menu">
+        <div className="menu max-lg:hidden">
           <ul className="flex gap-8">
             <li>Home</li>
             <li>Mercado</li>
@@ -14,7 +14,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="menu-buttons flex px-8 py-4 gap-6 items-center rounded-full">
+      <div className="menu-buttons flex px-8 py-4 gap-6 items-center rounded-full max-lg:hidden">
         <div className="left flex gap-2">
           <button className="btn btn-primary bg-[#dee0e2] text-gray-900 px-4 py-2 rounded-xl">Ingresar</button>
           <button className="btn btn-secondary bg-[#1d4ed8] text-white px-4 py-2 rounded-xl">Registrarse</button>
@@ -35,6 +35,9 @@ export default function Navbar() {
             </span>
           </div>
         </div>
+      </div>
+      <div className="hidden max-lg:block px-3">
+        <span>=</span>
       </div>
     </nav>
   );
