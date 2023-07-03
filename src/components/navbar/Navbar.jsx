@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -7,9 +8,9 @@ export default function Navbar() {
         <h1 className="font-semibold px-3 text-xl">SPSCoin</h1>
         <div className="menu max-lg:hidden">
           <ul className="flex gap-8">
-            <li>Home</li>
+            <li><NavLink to={"/"}>Home</NavLink></li>
             <li>Mercado</li>
-            <li>Criptomonedas</li>
+            <li><NavLink to={"/cryptos"}>Criptomonedas</NavLink></li>
           </ul>
         </div>
       </div>
