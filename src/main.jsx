@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/main.css";
 import "./index.css";
-import CryptosPage from "./pages/cryptos/Cryptos";
+import CryptosPage from "@cryptos";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
