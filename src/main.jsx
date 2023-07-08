@@ -7,7 +7,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
 import CryptoPage from "@crypto";
-import Home from "./pages/home/Home";
+import Home from "@home";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
