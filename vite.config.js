@@ -8,7 +8,8 @@ export default defineConfig({
   resolve:{
     alias:{
       '@cryptos': '/src/pages/cryptos/Cryptos.jsx',
-      '@crypto': '/src/pages/cryptos/Crypto.jsx'
+      '@crypto': '/src/pages/cryptos/Crypto.jsx',
+      '@home': '/src/pages/home/Home'
     }
   }
 })
