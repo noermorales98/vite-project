@@ -6,7 +6,7 @@ import CryptosPage from "@cryptos";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
-import CryptoPage from "./pages/cryptos/Crypto.jsx";
+import CryptoPage from "@crypto";
 import Home from "./pages/home/Home";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
