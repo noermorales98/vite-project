@@ -10,6 +10,7 @@ export default function CryptosPage() {
     axios
       .get(`${API_URL}assets`)
       .then((data) => {
+          console.log(data.data.data);
         setCoins(data.data.data);
       })
       .catch(() => console.log("Error"));
@@ -27,6 +28,7 @@ export default function CryptosPage() {
         {coins.map(({ id, name, priceUsd, symbol, changePercent24Hr }) => (
           <Criptos
             key={id}
+            id={id}
             name={name}
             priceUsd={priceUsd}
             symbol={symbol}

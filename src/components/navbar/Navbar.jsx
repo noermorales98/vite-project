@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="absolute top-0 w-full flex gap-4 items-center justify-between px-16 py-6 max-md:px-4 m-auto">
       <div className="title flex gap-10">
-        <h1 className="font-semibold px-3 text-xl">SPSCoin</h1>
+        <h1 className="font-semibold px-3 text-xl"><NavLink to={"/"}>SPScoin</NavLink></h1>
         <div className="menu max-lg:hidden">
           <ul className="flex gap-8">
             <li><NavLink to={"/"}>Home</NavLink></li>
