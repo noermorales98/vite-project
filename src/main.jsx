@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/main.css";
 import "./index.css";
-import CryptosPage from "@cryptos";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
-import CryptoPage from "@crypto";
-import Home from "@home";
+import Home from "./pages/home/Home"
+import CryptosPage from "./pages/cryptos/Cryptos"
+import CryptoPage from "./pages/cryptos/Crypto";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
