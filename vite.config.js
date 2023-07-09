@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/vite-project/',
   resolve: {
     alias: {
-      src: '/src',
+      '@': '/src',
     },
    }
 })

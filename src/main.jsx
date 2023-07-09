@@ -5,7 +5,7 @@ import "./index.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
-import Home from "./pages/home/Home"
+import Home from "pages/home/Home"
 import CryptosPage from "./pages/cryptos/Cryptos"
 import CryptoPage from "./pages/cryptos/Crypto";
 
