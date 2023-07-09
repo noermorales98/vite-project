@@ -5,9 +5,9 @@ import "./index.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./pages/error/error";
 import App from "./App.jsx";
-import Home from "pages/home/Home"
-import CryptosPage from "./pages/cryptos/Cryptos"
-import CryptoPage from "./pages/cryptos/Crypto";
+import Home from "@home";
+import CryptosPage from "@cryptos"
+import CryptoPage from "@crypto";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
