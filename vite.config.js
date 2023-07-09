@@ -7,9 +7,9 @@ export default defineConfig({
   base: '/vite-project/',
   resolve: {
     alias: {
-      '@home' : '/src/pages/home/Home.jsx',
-      '@cryptos': '/src/pages/cryptos/Cryptos',
-      '@crypto': '/src/pages/cryptos/Crypto',
+      '@home' : '/src/pages/Home/Home.jsx',
+      '@cryptos': '/src/pages/Cryptos/Cryptos',
+      '@crypto': '/src/pages/Cryptos/Crypto',
     },
    }
 })
